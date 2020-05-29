@@ -3,7 +3,7 @@
 <head>
 <style> 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-family: sans-serif;
 	text-align: center; margin: 0; padding: 0;
 	background: rgb(214,214,214);
 }
@@ -28,17 +28,24 @@ body {
 	text-decoration: none;
 	color: black;
 }
-.first-content {
+.first-content-box {
 	box-sizing: border-box;
 	padding-top: 70px;
 	background: linear-gradient(0deg, rgba(214,214,214,1) 0%, rgba(236,236,236,1) 50%, rgba(255,255,255,1) 80%);
 	min-height:100vh;
 }
-.first-content-center {
-	padding: 10vh 10vw;
-
+@media (max-width: 500px) {
+	.first-content-box {
+		font-size: 3vw;
+	}
 }
-
+.first-content {
+	padding: 10vh 10vw 0 10vw;
+}
+.second-content {
+	margin-top: 10vh;
+}
+h1 { font-size: 3em;}
 h1, h2 {
 	width: 100%;
 	margin:0;
@@ -51,18 +58,16 @@ h1, h2 {
 	color: white;
 	background-color: rgba(0,0,0,0.5)
 }
-.top {
-	top:0;
+.title {
+	padding-bottom: 0.1em;
 }
-.bottom {
-	bottom:0;
+hr {
+	margin:2em 0 1em 0;
 }
-.mh60 {
-	min-height: 60vh;
-}
-.mh40 {
-	min-height: 40vh;
-}
+.top {top:0;}
+.bottom {bottom:0;}
+.mh60 {min-height: 60vh;}
+.mh40 {min-height: 40vh;}
 .fixed-bg {
 	position: relative;
 	background-attachment: fixed;
@@ -78,6 +83,24 @@ h1, h2 {
 	margin: auto;
 	display: block;
 }
+.bodyimgR {
+	float: right;
+	width: 50vw;
+}
+.bodyimgL {
+	float: left;
+	width: 50vw;
+}
+.showcase {
+	max-width: 90vw;
+}
+.header-black {
+	padding: 2em 0 2em 0;
+	margin-bottom: 1em;
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+}
+section {overflow: auto;}
 </style>
 </head>
 <body>
@@ -87,10 +110,12 @@ h1, h2 {
 		<a href="https://github.com/angyongen" class="nav-block">Github Repository</a>
 	</div>
 
-	<div class="first-content">
-		<div class="first-content-center">
-			<h1 style="color: purple; font-size: 3em;">Hi, I'm Yong En</h1>
-			<h2>I am often fascinated by how computers work. <br>I enjoy using the understanding of different systems to solve problems and help others.
+	<div class="first-content-box">
+		<div class="first-content">
+			<h1 style="color: purple;">Hi, I'm Yong En</h1>
+			<h2>I am often fascinated by how computers work. <br>I enjoy using the understanding of different systems to solve problems and help others.</h2>
+		</div>
+		<div class="second-content">
 			<h2>Programming languages I am proficient in</h2>
 			<div class="icon-block"><img src="batchfile.png" class="mblock">Batch Scripting</div>
 			<div class="icon-block"><img src="vbs.png" class="mblock">VBScript</div>
@@ -99,43 +124,115 @@ h1, h2 {
 			<div class="icon-block"><img src="c++.png" class="mblock">C++</div>
 			<div class="icon-block"><img src="html5.png" class="mblock">HTML</div>
 			<div class="icon-block"><img src="js.png" class="mblock">Javascript</div>
-		
 		</div>
 	</div>
+	
 	<div style="background-color: lightblue">
-		<h2 class="title">My Projects</h2>
-		<h2><a href="https://github.com/angyongen/grouper">Grouper</a></h2>
-		Tries to randomly group people into groups of a certain size and make sure groups are not too big or too small
+		<h1 class="header-black">My Projects</h1>
 
-		<h2><a href="https://github.com/angyongen/js_synth">Javascript Synthesizer</a></h2>
-		Play piano from your web browser
-
-		<h2><a href="https://github.com/angyongen/Simbuino4WebPatched">Patched version of Myndale/Simbuino, a MAKERbuino emulator</a></h2>
-		Emulate the MAKERbuino from your web browser
-
-		<h2><a href="https://github.com/angyongen/Bingo-Generator">Javascript Bingo Generator</a></h2>
-		Generate customizable sheets to play Bingo
-
-		<h2><a href="https://github.com/angyongen/js_scoremaker">Piano roll musical scores</a></h2>
-		A new way of creating musical scores?
-
-		<h2><a href="https://github.com/angyongen/SG-Bus-Arrival-Time">SG Bus Arrival Time</a></h2>
-		Get bus arrival time in Singapore
-
-		<h2><a href="https://github.com/angyongen/makerbuino-frequency-generator">MAKERbuino square wave generator</a></h2>
-		Manipulate the timer prescaler and value exactly to get a precise frequency
-
-		<h2><a href="https://github.com/angyongen/Midi2">My Arduino MIDI Library</a></h2>
-		A library to parse MIDI data
-
-		<h2><a href="https://github.com/angyongen/Sound4">My Arduino Sound Library</a></h2>
-		Play many channels simultaneously
-
-		<h2><a href="https://github.com/angyongen/makerbuino-sd-explorer">MAKERbuino SD Card File Explorer</a></h2>
-		A file explorer for the MAKERbuino
-
-		<h2><a href="https://github.com/angyongen/makerbuino-midi">MAKERbuino MIDI File Player</a></h2>
-		Play MIDI files from MAKERbuino
+		<section>
+			<h2 class="title">Grouper</h2>
+			<div>Created because my class wanted to group ourselves randomly</div>
+			<img src="grouper.png" class="showcase">
+			<div><sub>
+				<a href="https://github.com/angyongen/grouper">Repository</a>
+				&bull;
+				<a href="https://angyongen.github.io/grouper/">Try now in Github Pages</a>
+			</sub></div>
+		</section>
+		<hr>
+		<section>
+			<h2 class="title">Javascript Synthesizer</h2>
+			<div>Play piano from your web browser</div>
+			<img src="js_synth.png" class="showcase">
+			<div><sub>
+				<a href="https://github.com/angyongen/js_synth">Repository</a>
+				&bull;
+				<a href="https://angyongen.github.io/js_synth/">Try now in Github Pages</a>
+			</sub></div>
+		</section>
+		<hr>
+		<section>
+			<h2 class="title">Patched version of Myndale/Simbuino, a MAKERbuino emulator</h2>
+			<div>Emulate the MAKERbuino from your web browser!</div>
+			<img src="simbuino.png" class="showcase">
+			<div><sub>
+				<a href="https://github.com/angyongen/Simbuino4WebPatched">Repository</a>
+				&bull;
+				<a href="https://angyongen.github.io/Simbuino4WebPatched/">Try now in Github Pages</a>
+			</sub></div>
+		</section>
+		<hr>
+		<section>
+			<h2 class="title">Javascript Bingo Generator</h2>
+			<div>Generate customizable sheets to play Bingo</div>
+			<img src="bingo.jpg" class="showcase">
+			<div><sub>
+				<a href="https://github.com/angyongen/Bingo-Generator">Repository</a>
+				&bull;
+				<a href="https://angyongen.github.io/Bingo-Generator/">Try now in Github Pages</a>
+			</sub></div>
+		</section>
+		<hr>
+		<section>
+			<h2 class="title">Piano roll musical scores</h2>
+			<div>A new way of creating musical scores?</div>
+			<img src="js_scoremaker.png" class="showcase">
+			<div><sub>
+				<a href="https://github.com/angyongen/js_scoremaker">Repository</a>
+				&bull;
+				<a href="https://angyongen.github.io/js_scoremaker/">Try now in Github Pages</a>
+			</sub></div>
+		</section>
+		<hr>
+		<section>
+			<h2 class="title">SG Bus Arrival Time</h2>
+			Get bus arrival time in Singapore
+			<div><sub>
+				<a href="https://github.com/angyongen/SG-Bus-Arrival-Time">Repository</a>
+			</sub></div>
+		</section>
+		<hr>
+		<section>
+			<h2 class="title">MAKERbuino square wave generator</h2>
+			Manipulate the timer prescaler and value exactly to get a precise frequency
+			<div><sub>
+				<a href="https://github.com/angyongen/makerbuino-frequency-generator">Repository</a>
+			</sub></div>
+		</section>
+		<hr>
+		<section>
+			<h2 class="title">My Arduino MIDI Library</h2>
+			A library to parse MIDI data
+			<div><sub>
+				<a href="https://github.com/angyongen/Midi2">Repository</a>
+			</sub></div>
+		</section>
+		<hr>
+		<section>
+			<h2 class="title">My Arduino Sound Library</h2>
+			Play many channels simultaneously
+			<div><sub>
+				<a href="https://github.com/angyongen/Sound4">Repository</a>
+			</sub></div>
+		</section>
+		<hr>
+		<section>
+			<h2 class="title">MAKERbuino SD Card File Explorer</h2>
+			A file explorer for the MAKERbuino
+			<div><sub>
+				<a href="https://github.com/angyongen/makerbuino-sd-explorer">Repository</a>
+			</sub></div>
+		</section>
+		<hr>
+		<section>
+			<h2 class="title">MAKERbuino MIDI File Player</h2>
+			Play MIDI files from MAKERbuino
+			<div><sub>
+				<a href="https://github.com/angyongen/makerbuino-midi">Repository</a>
+			</sub></div>
+		</section>
+		<hr>
 	</div>
 <!--
 	<div style="background-color: lightgreen">
@@ -150,6 +247,7 @@ h1, h2 {
 	</div>
 	<div style="height:100vh;background-color:grey;"></div>
 -->
+	<div style="height:10vh;background-color:lightgrey;"></div>
 
 </body>
 </html>
