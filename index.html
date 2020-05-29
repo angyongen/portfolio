@@ -29,12 +29,13 @@ body {
 	color: black;
 }
 .first-content {
+	box-sizing: border-box;
 	padding-top: 70px;
 	background: linear-gradient(0deg, rgba(214,214,214,1) 0%, rgba(236,236,236,1) 50%, rgba(255,255,255,1) 80%);
-	height:100vh;
+	min-height:100vh;
 }
 .first-content-center {
-	padding: 20vh 10vw;
+	padding: 10vh 10vw;
 
 }
 
@@ -69,6 +70,14 @@ h1, h2 {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.icon-block {
+	display: inline-block;
+	margin: 1em;
+}
+.mblock {
+	margin: auto;
+	display: block;
+}
 </style>
 </head>
 <body>
@@ -81,7 +90,16 @@ h1, h2 {
 	<div class="first-content">
 		<div class="first-content-center">
 			<h1 style="color: purple; font-size: 3em;">Hi, I'm Yong En</h1>
-			<h2>I am often fascinated by how computers work. <br>I enjoy using the understanding of different systems to solve problems and help others.<br> I am proficient in many programming languages such as Batch Scripting, VBScript, VB.NET, C#, C++, HTML, and Javascript. </h2>
+			<h2>I am often fascinated by how computers work. <br>I enjoy using the understanding of different systems to solve problems and help others.
+			<h2>Programming languages I am proficient in</h2>
+			<div class="icon-block"><img src="batchfile.png" class="mblock">Batch Scripting</div>
+			<div class="icon-block"><img src="vbs.png" class="mblock">VBScript</div>
+			<div class="icon-block"><img src="vbnet.png" class="mblock">VB.NET</div>
+			<div class="icon-block"><img src="csharp.png" class="mblock">C#</div>
+			<div class="icon-block"><img src="c++.png" class="mblock">C++</div>
+			<div class="icon-block"><img src="html5.png" class="mblock">HTML</div>
+			<div class="icon-block"><img src="js.png" class="mblock">Javascript</div>
+		
 		</div>
 	</div>
 	<div style="background-color: lightblue">
