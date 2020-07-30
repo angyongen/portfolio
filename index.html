@@ -1,204 +1,144 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style> 
-body {
-	font-family: sans-serif;
-	text-align: center; margin: 0; padding: 0;
-	background: rgb(214,214,214);
-}
-.nav {
-	z-index: 1;
-	position: fixed;
-	background-color: white;
-	width: 100%;
-	min-height: 70px;
-	display: flex;
-	align-items: center; 
-	justify-content: center;
-	text-align: center;
-}
-.nav-icon {
-	float: left;
-	width: 64px;
-	height: 64px;
-}
-.nav-block {
-	padding: 0 5vw;
-	text-decoration: none;
-	color: black;
-}
-.first-content-box {
-	box-sizing: border-box;
-	padding-top: 70px;
-	background: linear-gradient(0deg, rgba(214,214,214,1) 0%, rgba(236,236,236,1) 50%, rgba(255,255,255,1) 80%);
-	min-height:100vh;
-}
-@media (max-width: 500px) {
-	.first-content-box {
-		font-size: 3vw;
-	}
-}
-.first-content {
-	padding: 10vh 10vw 0 10vw;
-}
-.second-content {
-	margin-top: 10vh;
-}
-h1 { font-size: 3em;}
-h1, h2 {
-	width: 100%;
-	margin:0;
-	padding: 0.5em 0;
-}
-.pic-text {
-	padding: 0.2em 0;
-	position: absolute;
-	margin: 0;
-	color: white;
-	background-color: rgba(0,0,0,0.5)
-}
-.title {
-	padding-bottom: 0.1em;
-}
-hr {
-	margin:2em 0 1em 0;
-}
-.top {top:0;}
-.bottom {bottom:0;}
-.mh60 {min-height: 60vh;}
-.mh40 {min-height: 40vh;}
-.fixed-bg {
-	position: relative;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.icon-block {
-	display: inline-block;
-	margin: 1em;
-}
-.mblock {
-	margin: auto;
-	display: block;
-}
-.bodyimgR {
-	float: right;
-	width: 50vw;
-}
-.bodyimgL {
-	float: left;
-	width: 50vw;
-}
-.showcase {
-	max-width: 90vw;
-}
-.header-black {
-	padding: 2em 0 2em 0;
-	margin-bottom: 1em;
-	background-color: rgba(0,0,0,0.8);
-	color: white;
-}
-section {overflow: auto;}
-</style>
+	<script src="analytics.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="nav">
-		<img class="nav-block nav-icon" src="https://angyongen.github.io/android-chrome-256x256.png">
-		<a href="https://angyongen.github.io/" class="nav-block">Github Pages - Apps</a>
-		<a href="https://github.com/angyongen" class="nav-block">Github Repository</a>
-	</div>
-
 	<div class="first-content-box">
-		<div class="first-content">
-			<h1 style="color: purple;">Hi, I'm Yong En</h1>
-			<h2>I am often fascinated by how computers work. <br>I enjoy using the understanding of different systems to solve problems and help others.</h2>
+		<div class="nav">
+			<div style="display:inline; font-family: sans-serif; ">&nbsp;&nbsp;&nbsp;</div>
+			<a href="https://angyongen.github.io/" class="nav-block">GITHUB PAGES - APPS</a>
+			<a href="https://github.com/angyongen" class="nav-block">GITHUB REPOSITORY</a>
+			<!--<span class="nav-block nav-icon-size"></span>-->
 		</div>
+		<div class="nav fake-nav"><a class="nav-block">|</a></div>
+		<h1 class="header">HI, THIS IS <span style="color:pink">YONG<img style="height: 1.4em;vertical-align: top" alt="EN's web page" src="Enwebpage.png"></span></h1>
+
+		<div class="first-content">I am often fascinated by how computers work. <br><br>I&nbsp;enjoy using the understanding of different systems to solve problems and&nbsp;help&nbsp;others.</div>
 		<div class="second-content">
-			<h2>Programming languages I am proficient in</h2>
-			<div class="icon-block"><img src="batchfile.png" class="mblock">Batch Scripting</div>
-			<div class="icon-block"><img src="vbs.png" class="mblock">VBScript</div>
-			<div class="icon-block"><img src="vbnet.png" class="mblock">VB.NET</div>
-			<div class="icon-block"><img src="csharp.png" class="mblock">C#</div>
-			<div class="icon-block"><img src="c++.png" class="mblock">C++</div>
-			<div class="icon-block"><img src="html5.png" class="mblock">HTML</div>
-			<div class="icon-block"><img src="js.png" class="mblock">Javascript</div>
+			<div class="icon-block"><img src="c++.png" class="icon"><span class="icon-name">C++</span></div>
+			<div class="icon-block"><img src="html5.png" class="icon"><span class="icon-name">HTML</span></div>
+			<div class="icon-block"><img src="js.png" class="icon"><span class="icon-name">Javascript</span></div>
+			<div class="icon-block"><img src="vbs.png" class="icon"><span class="icon-name">VBScript</span></div>
+			<div class="icon-block"><img src="batchfile.png" class="icon"><span class="icon-name">Batch Scripting</span></div>
+			<div class="icon-block"><img src="vbnet.png" class="icon"><span class="icon-name">VB.NET</span></div>
+			<div class="icon-block"><img src="csharp.png" class="icon"><span class="icon-name">C#</span></div>
+			<br><b class="PROGRAMMING-LANGUAGES">PROGRAMMING LANGUAGES I AM PROFICIENT IN</b>
 		</div>
+
+		
 	</div>
 	
-	<div style="background-color: lightblue">
-		<h1 class="header-black">My Projects</h1>
-
+	<div>
+		<h1 class="body-header">MY PROJECTS</h1>
 		<section>
-			<h2 class="title">Grouper</h2>
-			<div>Created because my class wanted to group ourselves randomly</div>
-			<img src="grouper.png" class="showcase">
+			<div class="third">
+			<h2 class="title">My Arduino MIDI Library</h2>
+			A library to parse MIDI data
 			<div><sub>
-				<a href="https://github.com/angyongen/grouper">Repository</a>
-				&bull;
-				<a href="https://angyongen.github.io/grouper/">Try now in Github Pages</a>
+				<a href="https://github.com/angyongen/Midi2?files=1">Repository</a>
 			</sub></div>
-		</section>
-		<hr>
-		<section>
-			<h2 class="title">Javascript Synthesizer</h2>
-			<div>Play piano from your web browser</div>
-			<img src="js_synth.png" class="showcase">
+			</div>
+			<div class="third">
+				<h2 class="title">MAKERbuino square wave generator</h2>
+				Manipulate timer prescaler and value to get an exact frequency
+				<div><sub>
+					<a href="https://github.com/angyongen/makerbuino-frequency-generator?files=1">Repository</a>
+				</sub></div>
+			</div>
+			<div class="third">
+			<h2 class="title">My Arduino Sound Library</h2>
+			Play many channels simultaneously
 			<div><sub>
-				<a href="https://github.com/angyongen/js_synth">Repository</a>
-				&bull;
-				<a href="https://angyongen.github.io/js_synth/">Try now in Github Pages</a>
+				<a href="https://github.com/angyongen/Sound4?files=1">Repository</a>
 			</sub></div>
+			</div>
 		</section>
-		<hr>
 		<section>
-			<h2 class="title">Patched version of Myndale/Simbuino, a MAKERbuino emulator</h2>
-			<div>Emulate the MAKERbuino from your web browser!</div>
-			<img src="simbuino.png" class="showcase">
+			<div class="third">
+			<h2 class="title">MAKERbuino SD Card File Explorer</h2>
+			A file explorer for the MAKERbuino
 			<div><sub>
-				<a href="https://github.com/angyongen/Simbuino4WebPatched">Repository</a>
-				&bull;
-				<a href="https://angyongen.github.io/Simbuino4WebPatched/">Try now in Github Pages</a>
+				<a href="https://github.com/angyongen/makerbuino-sd-explorer?files=1">Repository</a>
 			</sub></div>
-		</section>
-		<hr>
-		<section>
-			<h2 class="title">Javascript Bingo Generator</h2>
-			<div>Generate customizable sheets to play Bingo</div>
-			<img src="bingo.jpg" class="showcase">
+			</div>
+			<div class="third">
+			<h2 class="title">MAKERbuino MIDI File Player</h2>
+			Play MIDI files from MAKERbuino
 			<div><sub>
-				<a href="https://github.com/angyongen/Bingo-Generator">Repository</a>
-				&bull;
-				<a href="https://angyongen.github.io/Bingo-Generator/">Try now in Github Pages</a>
+				<a href="https://github.com/angyongen/makerbuino-midi?files=1">Repository</a>
 			</sub></div>
-		</section>
-		<hr>
-		<section>
-			<h2 class="title">Piano roll musical scores</h2>
-			<div>A new way of creating musical scores?</div>
-			<img src="js_scoremaker.png" class="showcase">
-			<div><sub>
-				<a href="https://github.com/angyongen/js_scoremaker">Repository</a>
-				&bull;
-				<a href="https://angyongen.github.io/js_scoremaker/">Try now in Github Pages</a>
-			</sub></div>
-		</section>
-		<hr>
-		<section>
+			</div>
+			<div class="third">
 			<h2 class="title">SG Bus Arrival Time</h2>
 			Get bus arrival time in Singapore
 			<div><sub>
-				<a href="https://github.com/angyongen/SG-Bus-Arrival-Time">Repository</a>
+				<a href="https://github.com/angyongen/SG-Bus-Arrival-Time?files=1">Repository</a>
 			</sub></div>
+			</div>
 		</section>
 		<hr>
+		<section>
+			<img src="grouper.jpg" class="section-center showcase">
+			<div class="section-center showcase-text-box">
+				<h2 class="title">Grouper</h2>
+				<div>Created because my class wanted to group ourselves randomly</div>
+				<div><sub>
+					<a href="https://github.com/angyongen/grouper?files=1">Repository</a>
+					&bull;
+					<a href="https://angyongen.github.io/grouper/">Try now</a>
+				</sub></div>
+			</div>
+		</section>
+		<hr>
+		
+		<section>
+			<img src="js_synth.png" class="section-center showcase">
+			<div class="section-center showcase-text-box">
+				<h2 class="title">Javascript Synthesizer</h2>
+				<div>Play piano from your web browser</div>
+				<div><sub>
+					<a href="https://github.com/angyongen/js_synth?files=1">Repository</a>
+					&bull;
+					<a href="https://angyongen.github.io/js_synth/">Try now</a>
+				</sub></div>
+			</div>
+		</section>
+		<hr>
+		<section>
+			<img src="bingo.jpg" class="section-center showcase">
+			<div class="section-center showcase-text-box">
+				<h2 class="title">Javascript Bingo Generator</h2>
+				<div>Generate customizable sheets to play Bingo</div>
+				<div><sub>
+					<a href="https://github.com/angyongen/Bingo-Generator?files=1">Repository</a>
+					&bull;
+					<a href="https://angyongen.github.io/Bingo-Generator/">Try now</a>
+				</sub></div>
+			</div>
+		</section>
+		<hr>
+		<section>
+			<img src="js_scoremaker.png" class="section-center showcase">
+			<div class="section-center showcase-text-box">
+				<h2 class="title">Piano roll musical scores</h2>
+				<div>A new way of creating musical scores?</div>
+				<div><sub>
+					<a href="https://github.com/angyongen/js_scoremaker?files=1">Repository</a>
+					&bull;
+					<a href="https://angyongen.github.io/js_scoremaker/">Try now</a>
+				</sub></div>
+			</div>
+		</section>
+		<hr>
+		<!--
 		<section>
 			<h2 class="title">MAKERbuino square wave generator</h2>
 			Manipulate the timer prescaler and value exactly to get a precise frequency
 			<div><sub>
-				<a href="https://github.com/angyongen/makerbuino-frequency-generator">Repository</a>
+				<a href="https://github.com/angyongen/makerbuino-frequency-generator?files=1">Repository</a>
 			</sub></div>
 		</section>
 		<hr>
@@ -206,7 +146,7 @@ section {overflow: auto;}
 			<h2 class="title">My Arduino MIDI Library</h2>
 			A library to parse MIDI data
 			<div><sub>
-				<a href="https://github.com/angyongen/Midi2">Repository</a>
+				<a href="https://github.com/angyongen/Midi2?files=1">Repository</a>
 			</sub></div>
 		</section>
 		<hr>
@@ -214,7 +154,7 @@ section {overflow: auto;}
 			<h2 class="title">My Arduino Sound Library</h2>
 			Play many channels simultaneously
 			<div><sub>
-				<a href="https://github.com/angyongen/Sound4">Repository</a>
+				<a href="https://github.com/angyongen/Sound4?files=1">Repository</a>
 			</sub></div>
 		</section>
 		<hr>
@@ -222,7 +162,7 @@ section {overflow: auto;}
 			<h2 class="title">MAKERbuino SD Card File Explorer</h2>
 			A file explorer for the MAKERbuino
 			<div><sub>
-				<a href="https://github.com/angyongen/makerbuino-sd-explorer">Repository</a>
+				<a href="https://github.com/angyongen/makerbuino-sd-explorer?files=1">Repository</a>
 			</sub></div>
 		</section>
 		<hr>
@@ -230,12 +170,19 @@ section {overflow: auto;}
 			<h2 class="title">MAKERbuino MIDI File Player</h2>
 			Play MIDI files from MAKERbuino
 			<div><sub>
-				<a href="https://github.com/angyongen/makerbuino-midi">Repository</a>
+				<a href="https://github.com/angyongen/makerbuino-midi?files=1">Repository</a>
+			</sub></div>
+		</section>
+		<hr>
+		<section>
+			<h2 class="title">SG Bus Arrival Time</h2>
+			Get bus arrival time in Singapore
+			<div><sub>
+				<a href="https://github.com/angyongen/SG-Bus-Arrival-Time?files=1">Repository</a>
 			</sub></div>
 		</section>
 		<hr>
 	</div>
-<!--
 	<div style="background-color: lightgreen">
 		<h2>Fixing the USB port of a radio/music player</h2>
 		<div class="fixed-bg mh60" style="background-image: url('before_sq.jpg');">
