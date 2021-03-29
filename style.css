@@ -47,8 +47,8 @@ body {
 	color: white;
 }
 .body-header {
-	border:1px solid grey;
-	border-style: solid none;
+	/*border:1px solid grey;*/
+	/*border-style: solid none;*/
 	padding: 2em 0 2em 0;
 	margin-bottom: 1em;
 	color: white;
